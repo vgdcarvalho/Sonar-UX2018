@@ -1,0 +1,31 @@
+body,html{
+	height:100%;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../images/fundo3.png");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    width: 100%; /* You can set the dimensions to whatever you want */
+    height: 100%;
+    object-fit: fill;
+}
+
+.jumbotron {
+      margin-bottom:0;
+}
+
+/*#imagem1{
+	height: 100px;
+	width: 200px;
+}*/
