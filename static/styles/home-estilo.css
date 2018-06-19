@@ -1,10 +1,34 @@
+/*LEMBRAR QUE A HIERARQUIA É ESSENCIAL PARA A CONSTRUÇÃO DE UM CSS EFICIENTE!!!!!!!*/
+
 body,html{
-	height:100%;
+	height:100%; /* Necessário para que imagem de fundo funcione responsivamente */
+	/*font-family: "Roboto Condensed";*/
 }
 
+
+/*fonte diminuir automaticamente e melhorar responsividade
+max-width determina o tamanho máxima que vale para a classe .nowrap funcionar
+vw é uma unidade relativa ao viewport*/
+@media (max-width: 48em) {
+.nowrap{
+/*font-size: 0.75rem;*/
+font-size: 6vw;
+	}
+
+.nowrap {
+white-space: nowrap;
+}
+
+h2{
+/*font-size: 0.75rem;*/
+font-size: 3vw;
+	}
+}
+
+/*Define a imagem de fundo responsivimante*/
 .bg {
     /* The image used */
-    background-image: url("../images/fundo3.png");
+    background-image: url("imagens/fundo3.png");
 
     /* Full height */
     height: 100%; 
@@ -16,13 +40,14 @@ body,html{
 }
 
 img {
-    width: 100%; /* You can set the dimensions to whatever you want */
+    width: 100%;  
     height: 100%;
-    object-fit: fill;
 }
 
 .jumbotron {
       margin-bottom:0;
+      background-color: #666!important; /*Uma declaração de estilo com !important ignora qualquer
+      									 hierarquia e prevalece sobre todas as demais, é a de mais alta prioridade.*/
 }
 
 /*#imagem1{
