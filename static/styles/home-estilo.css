@@ -1,10 +1,31 @@
 /*LEMBRAR QUE A HIERARQUIA É ESSENCIAL PARA A CONSTRUÇÃO DE UM CSS EFICIENTE!!!!!!!*/
 
+/* {
+  border: 1px solid #f00;
+}
+*/
 body,html{
 	height:100%; /* Necessário para que imagem de fundo funcione responsivamente */
-	/*font-family: "Roboto Condensed";*/
+	font-family: "Roboto Condensed";
 }
 
+.btn-primary{
+	background-color: #929292!important;
+	border-color: #be3d39!important;
+	padding:20px!important;
+	font-size: x-large!important;
+}
+
+.glyphicon-log-in{
+	font-size: 20pt!important;
+	color:white!important;
+	margin-top:2em!important;
+	padding-left: 6px!important;
+}
+/*.btn-default{
+	padding:20px!important;
+	font-size: large!important;
+}*/
 
 /*fonte diminuir automaticamente e melhorar responsividade
 max-width determina o tamanho máxima que vale para a classe .nowrap funcionar
@@ -14,6 +35,13 @@ vw é uma unidade relativa ao viewport*/
 /*font-size: 0.75rem;*/
 font-size: 6vw;
 	}
+
+/*@media (max-width: 48em) {
+p {
+font-size: 0.75rem;
+font-size: 3.5vw;
+	}
+}*/
 
 .nowrap {
 white-space: nowrap;
@@ -27,9 +55,6 @@ font-size: 3vw;
 
 /*Define a imagem de fundo responsivimante*/
 .bg {
-    /* The image used */
-    background-image: url("imagens/fundo3.png");
-
     /* Full height */
     height: 100%; 
 
@@ -37,6 +62,75 @@ font-size: 3vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#bg1{
+	/* The image used */
+    background-image: url("imagens/fundo3.png");
+}
+
+/*elemento 'a' e id 'carouselExampleIndicators' dentro do id 'bg1'*/
+#bg1 a, #bg1 #carouselExampleIndicators{
+	padding-top: 25em;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #c44;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5); 
+    position: relative;
+    top:5em;
+    
+}
+.carousel-indicators .active {
+    width: 20px;
+    height: 20px;
+    background-color: #990000;
+    position: relative;
+    top:5em;
+}
+
+
+/*Mudar cor dos controladores https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel*/
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23be3d39' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important
+ /*opacity: 1!important;*/
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23be3d39' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+#bg2 p{
+	/*text-align: right;*/
+	text-align: justify;
+	font-size: 22pt;
+	color: white;
+	padding-top: 2em;
+	padding-right: 1em;
+}
+
+#bg2{
+	background-image: url("imagens/fundo2-5.jpg");
+	/*opacity: 0.4;*/
+}
+
+#bg2 > .row {
+	margin:0;
+}
+
+#botao4{
+	margin-top:5em;
+}
+
+#bg3{
+	background-image: url("imagens/fundo4.png");
 }
 
 img {
@@ -54,3 +148,13 @@ img {
 	height: 100px;
 	width: 200px;
 }*/
+
+
+
+/*.slide-content .scroller {
+  width: 1024px;
+}
+
+/*O que preciso fazer: 
+Imagem de fundo precisa diminuir também quando redimensiono a janela
+Ajustar ponteiro para cada local da tela*/
