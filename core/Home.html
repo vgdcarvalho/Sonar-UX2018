@@ -14,7 +14,7 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
 		<!-- Meu CSS -->
-		<link href="../static/styles/home-estilo.css" rel="stylesheet" type="text/css" /> 
+		<link href="home-estilo.css" rel="stylesheet" type="text/css" /> 
 
 		<title> Sonar - Home1 </title>
 	</head>
@@ -60,28 +60,35 @@
 		<div class="jumbotron container-fluid">
 			<div class="row">
 				<div class="col-sm-3 col-md-3 hidden-xs">
-					<img id="imagem1" src="../static/images/logo2-2.png" class="img-responsive" alt="Logo marca da empresa">
+					<img id="imagem1" src="imagens/logo2-2.png" class="img-responsive" alt="Logo marca da empresa">
 				</div>
-				<div class="col-sm-6 col-md-6 col-xs-6">
-					<h1 class="nowrap">Bem vindo a Sonar</h1>
-					<h2>Aqui você monta o seu carro</h2>
-					<a class="btn btn-primary btn-lg"  href="#" role="button">Crie seu carro</a>
-					<a class="btn btn-primary btn-lg"  href="#" role="button">Crie seu carro</a>
-					<a class="btn btn-primary btn-lg"  href="#" role="button">Crie seu carro</a>
+				<div id="botoes" class="col-sm-6 col-md-6 col-xs-6">
+					<a class="btn btn-primary btn-lg"  href="visualizador.html" role="button">Crie seu carro</a>
+					<a class="btn btn-primary btn-lg"  href="contato.html" role="button">Contato</a>
+					<a class="btn btn-primary btn-lg"  href="suporte.html" role="button">Suporte</a>
 				</div>
-				<div class="col-sm-3 col-md-3 col-lg-3">
+				<div id="logos" class="col-sm-3 col-md-3 col-lg-3">
 					<!-- <button type="button" class="btn btn-default btn-sm">
          			<span class="glyphicon glyphicon-log-in"></span> Log in </button> -->
-         			<span class="glyphicon glyphicon-log-in"></span><p>Log in</p>
+         			<!-- <a href="login.html" ><span class="glyphicon glyphicon-log-in"></span></a>
+         			<a href="registro.html"><span class="glyphicon glyphicon-user"></span></a>
+         			<a href="login.html"><p><br/>Log in</p></a>
+         			<a href="registro.html"><p>Registre-se</p></a> -->
+         			<button type="button" class="btn btn-default btn-sm">
+          				<span class="glyphicon glyphicon-log-in"></span><br/>Log in
+        			</button>
+        			<button type="button" class="btn btn-default btn-sm">
+          				<span class="glyphicon glyphicon-user"></span><br/> Registre-se
+        			</button>
          		</div>
 			</div>
 		</div>
 	
- 		<!-- Pq quando coloco dentro do container não aparece? Carrossel não mexe, será que é por causa dos estilos defnidos?-->
  		<!-- mx-auto: centraliza a imagem
  			d-block: imagem como um bloco
  			w-50: largura da imagem em porcentagem-->
  		<div id="bg1" class="bg">
+ 			<p> O carro dos seus sonhos aqui </p>
  			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="background-color: transparent;">
  			<ol class="carousel-indicators">
 			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -90,13 +97,13 @@
   			</ol>
   			<div class="carousel-inner container">
     			<div class="carousel-item active">
-     				<img class="d-block w-50 mx-auto img-responsive" src="../static/images/mustang2-2.png" alt="First slide">
+     				<img class="d-block w-50 mx-auto img-responsive" src="imagens/mustang2-2.png" alt="First slide">
     			</div>
     			<div class="carousel-item">
-      				<img class="d-block w-50 mx-auto" src="../static/images/car4-2.png" alt="Second slide">
+      				<img class="d-block w-50 mx-auto" src="imagens/car4-2.png" alt="Second slide">
     			</div>
     			<div class="carousel-item">
-     				<img class="d-block w-50 mx-auto" src="../static/images/truck2-1.png" alt="Third slide">
+     				<img class="d-block w-50 mx-auto" src="imagens/truck2-1.png" alt="Third slide">
     			</div>
  			</div>
 			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -129,10 +136,10 @@
  		<div id="bg3" class="bg">
  		</div>
 
- 		<div class="container-fluid">
+ 		<div id="rodape" class="container-fluid">
 			<footer class="row jumbotron">
 				<div class="col-md-2">
-					<img src="../static/images/logo2-2.png" class="img-responsive">
+					<img src="imagens/logo2-2.png" class="img-responsive">
 				</div>
 				<div class="col-md-8">
 					<ul class="list-inline list-unstyled">
@@ -146,7 +153,7 @@
 				</div>
 				<div class="col-md-2">
 					<address>
-						Name, Inc.<br/>
+						Sonar, Inc.<br/>
 						Endereço 1 <br/>
 						Endereço 2 <br/>
 						Fone: (xxx) xxxx-xxxx
@@ -168,4 +175,5 @@
 <!-- Dúvidas
 	Eliminar espaço entre cada linha, mais especificamente entre menuSuperior e a imagem abaixo dele
 	Criar carrosel como do site da lamborghini
-	Quando usar container? Pq deixar tudo dentro dele? -->
+	Quando usar container? Pq deixar tudo dentro dele?
+	Fazer ficar responsivo dentro da coluna -->
