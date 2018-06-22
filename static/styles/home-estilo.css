@@ -114,7 +114,7 @@ font-size: 3vw;
 
 #bg1{
 	/* The image used */
-    background-image: url("imagens/fundo3.png");
+    background-image: url("../images/fundo3.png");
 }
 
 /*elemento 'a' e id 'carouselExampleIndicators' dentro do id 'bg1'*/
@@ -166,7 +166,7 @@ font-size: 3vw;
 }
 
 #bg2{
-	background-image: url("imagens/fundo2-5.jpg");
+	background-image: url("../images/fundo2-5.jpg");
 	/*opacity: 0.4;*/
 }
 
@@ -179,7 +179,7 @@ font-size: 3vw;
 }
 
 #bg3{
-	background-image: url("imagens/fundo4.png");
+	background-image: url("../images/fundo4.png");
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------------*/
