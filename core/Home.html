@@ -86,9 +86,12 @@
 	
  		<!-- mx-auto: centraliza a imagem
  			d-block: imagem como um bloco
- 			w-50: largura da imagem em porcentagem-->
+ 			w-50: largura da imagem em porcentagem
+ 			Vou precisar criar grid system para carrossel?-->
+
  		<div id="bg1" class="bg">
  			<p> O carro dos seus sonhos aqui </p>
+ 			<p> SUV <span>Esportivo</span> Utilitário </p> 
  			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="background-color: transparent;">
  			<ol class="carousel-indicators">
 			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -97,13 +100,13 @@
   			</ol>
   			<div class="carousel-inner container">
     			<div class="carousel-item active">
-     				<img class="d-block w-50 mx-auto img-responsive" src="../static/images/mustang2-2.png" alt="First slide">
+     				<a href="#"><img class="d-block w-50 mx-auto img-responsive" src="../static/images/mustang2-2.png" alt="First slide"></a>
     			</div>
     			<div class="carousel-item">
-      				<img class="d-block w-50 mx-auto" src="../static/images/car4-2.png" alt="Second slide">
+      				<a href="#"><img class="d-block w-50 mx-auto" src="../static/images/car4-2.png" alt="Second slide"></a>
     			</div>
     			<div class="carousel-item">
-     				<img class="d-block w-50 mx-auto" src="../static/images/truck2-1.png" alt="Third slide">
+     				<a href="#"><img class="d-block w-50 mx-auto" src="../static/images/truck2-1.png" alt="Third slide"></a>
     			</div>
  			</div>
 			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -176,4 +179,14 @@
 	Eliminar espaço entre cada linha, mais especificamente entre menuSuperior e a imagem abaixo dele
 	Criar carrosel como do site da lamborghini
 	Quando usar container? Pq deixar tudo dentro dele?
-	Fazer ficar responsivo dentro da coluna -->
+	Fazer ficar responsivo dentro da coluna
+	Categoria do carro girar de acordo com carrossel?
+	Como fazer elementos como um vetor, igual a ficha técnica do mockups
+	 -->
+
+<!-- O que preciso fazer: 
+Deixar setinhas do carrossel em posição fixa
+Imagem de fundo precisa diminuir também quando redimensiono a janela
+Ajustar ponteiro para cada local da tela
+Implementar alguns elementos restantes: barra de ficha técnica, botão de help, carrosel na terceira imagem
+ -->
