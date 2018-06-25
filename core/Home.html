@@ -5,6 +5,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+		<!-- Fonte Advent Pro -->
+		<link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+
 		<!--Bootstrap CSS via CDN-->
 		<link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -20,49 +23,15 @@
 	</head>
 	<body>
 
-		
-		<!-- <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-		 	<div class="navbar-header">
-			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-			    	<span class="sr-only">Toggle navigation</span>
-				    <span class="icon-bar"></span>				      
-				    <span class="icon-bar"></span>
-				    <span class="icon-bar"></span>
-			    </button>
-			    <div style="font-family:Webdings;">
-			     	<a href="#" class="navbar-brand">M</a>
-			    </div>
-			</div>
-
-		  	<div class="collapse navbar-collapse navbar-ex1-collapse">
-		    	<ul class="nav navbar-nav">
-		      		<li class="active"><a href="#">About</a></li>
-		      		<li><a href="#">Team</a></li>
-		      		<li class="dropdown">
-		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
-		        	<ul class="dropdown-menu">
-			          	<li><a href="#">Menu1</a></li>
-			          	<li><a href="#">Menu2</a></li>
-			          	<li><a href="#">Menu2</a></li>
-			          	<li><a href="#">Menu2</a></li>
-			        </ul>
-		      		</li>
-		    	</ul>
-		    	<ul class="nav navbar-nav navbar-right">
-				    <li><a href="#">Contact</a></li>
-				    <li><a href="#">Sign Up</a></li>
-			    </ul>
-		  	</div>
-		</nav> -->
 
 		<!-- Menu Superior, usar header? -->
 		<!-- Melhorar essa grid -->
 		<div class="jumbotron container-fluid">
 			<div class="row">
-				<div class="col-sm-3 col-md-3 hidden-xs">
+				<div class="col-sm-2 col-md-2 hidden-xs">
 					<img id="imagem1" src="../static/images/logo2-2.png" class="img-responsive" alt="Logo marca da empresa">
 				</div>
-				<div id="botoes" class="col-sm-6 col-md-6 col-xs-6">
+				<div id="botoes" class="col-sm-offset-2 col-sm-5 col-md-offset-2 col-md-5 col-xs-6">
 					<a class="btn btn-primary btn-lg"  href="visualizador.html" role="button">Crie seu carro</a>
 					<a class="btn btn-primary btn-lg"  href="contato.html" role="button">Contato</a>
 					<a class="btn btn-primary btn-lg"  href="suporte.html" role="button">Suporte</a>
@@ -91,32 +60,38 @@
 
  		<div id="bg1" class="bg">
  			<p> O carro dos seus sonhos aqui </p>
- 			<p> SUV <span>Esportivo</span> Utilitário </p> 
- 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="background-color: transparent;">
- 			<ol class="carousel-indicators">
-			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  			</ol>
-  			<div class="carousel-inner container">
-    			<div class="carousel-item active">
-     				<a href="#"><img class="d-block w-50 mx-auto img-responsive" src="../static/images/mustang2-2.png" alt="First slide"></a>
-    			</div>
-    			<div class="carousel-item">
-      				<a href="#"><img class="d-block w-50 mx-auto" src="../static/images/car4-2.png" alt="Second slide"></a>
-    			</div>
-    			<div class="carousel-item">
-     				<a href="#"><img class="d-block w-50 mx-auto" src="../static/images/truck2-1.png" alt="Third slide"></a>
-    			</div>
- 			</div>
-			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-		    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		   		<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-		  		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		   	 	<span class="sr-only">Next</span>
-		 	</a>
+ 			<!-- <p> SUV <span>Esportivo</span> Utilitário </p>  -->
+ 			<div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: transparent;">
+	 			<ol class="carousel-indicators">
+				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	  			</ol>
+	  			<div class="carousel-inner container">
+	    			<div class="carousel-item active">
+	     				<a href="#"><img class="d-block w-50 mx-auto" src="../static/images/mustang2-2.png" alt="First slide"></a>
+	    			</div>
+	    			<div class="carousel-item">
+	      				<a href="#"><img class="d-block w-50 mx-auto" src="../static/images/car4-2.png" alt="Second slide"></a>
+	    			</div>
+	    			<div class="carousel-item">
+	     				<a href="#"><img class="d-block w-50 mx-auto" src="../static/images/truck2-1.png" alt="Third slide"></a>
+	    			</div>
+	 			</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+			    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			   		<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+			  		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			   	 	<span class="sr-only">Next</span>
+			 	</a>
+			</div>
+			<a href="#"><span class="glyphicon glyphicon-question-sign"></span></a>
+			<div id="detalhes-carro">
+				<p>
+					<span>Ficha Técnica</span><span>Descrição</span><span>Peças</span>
+				</p>
 			</div>
  		</div>
 
@@ -137,6 +112,33 @@
 
  		<!-- Terceira imaagem -->
  		<div id="bg3" class="bg">
+ 			<p>Últimos modelos criados</p>
+ 			<div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" style="background-color: transparent;">
+	 			<ol class="carousel-indicators">
+				    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+	  			</ol>
+	  			<div class="carousel-inner container">
+	    			<div class="carousel-item active">
+	     				<a href="#"><img class="d-block w-100 mx-auto img-responsive" src="../static/images/3juntos2-1.png" alt="First slide"></a>
+	    			</div>
+	    			<div class="carousel-item">
+	      				<a href="#"><img class="d-block w-100 mx-auto" src="../static/images/3juntos2-3.png" alt="Second slide"></a>
+	    			</div>
+	    			<div class="carousel-item">
+	     				<a href="#"><img class="d-block w-100 mx-auto" src="../static/images/3juntos2-2.png" alt="Third slide"></a>
+	    			</div>
+	 			</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+			    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			   		<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+			  		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			   	 	<span class="sr-only">Next</span>
+			 	</a>
+			</div>
  		</div>
 
  		<div id="rodape" class="container-fluid">
@@ -176,8 +178,6 @@
 </html>
 
 <!-- Dúvidas
-	Eliminar espaço entre cada linha, mais especificamente entre menuSuperior e a imagem abaixo dele
-	Criar carrosel como do site da lamborghini
 	Quando usar container? Pq deixar tudo dentro dele?
 	Fazer ficar responsivo dentro da coluna
 	Categoria do carro girar de acordo com carrossel?

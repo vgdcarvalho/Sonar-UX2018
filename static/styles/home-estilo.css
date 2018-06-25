@@ -11,7 +11,7 @@
 
 body,html{
 	height:100%; /* Necessário para que imagem de fundo funcione responsivamente */
-	font-family: "Roboto Condensed";
+	font-family: 'Roboto Condensed';
 }
 
 img {
@@ -19,10 +19,34 @@ img {
     height: 100%;
 }
 
+a{
+	text-decoration: none;
+}
+
+a:link, a:visited{
+	color: #ffffff
+}
+
+a:hover {
+	color:#000000
+}
+
 .jumbotron {
-      margin-bottom:0;
-      background-color: #666!important; /*Uma declaração de estilo com !important ignora qualquer
+	margin-bottom:0;
+    background-color: #666!important; /*Uma declaração de estilo com !important ignora qualquer
       									 hierarquia e prevalece sobre todas as demais, é a de mais alta prioridade.*/
+}
+
+/*Não está responsiva*/
+/*#imagem1{
+	height: 75%;
+	width: 75%;
+}
+*/
+
+/*Necessário para que botões fiquem juntos*/
+#botoes{
+	font-size: 0pt;
 }
 
 #botoes .btn-primary{
@@ -30,7 +54,11 @@ img {
 	border-color: #be3d39!important;
 	padding:20px!important;
 	font-size: x-large!important;
+	height: 100%;
+}
 
+#botoes .btn-primary:hover{
+	color:black;
 }
 
 #logos .btn-default{
@@ -44,7 +72,7 @@ img {
 	margin-left: 30%;
 }
 
-.glyphicon{
+#logos .glyphicon{
 	font-size: 20pt!important;
 	color:white!important;
 }
@@ -67,31 +95,6 @@ img {
 	font-size: large!important;
 }*/
 
-/*fonte diminuir automaticamente e melhorar responsividade
-max-width determina o tamanho máxima que vale para a classe .nowrap funcionar
-vw é uma unidade relativa ao viewport*/
-@media (max-width: 48em) {
-.nowrap{
-/*font-size: 0.75rem;*/
-font-size: 6vw;
-	}
-
-/*@media (max-width: 48em) {
-p {
-font-size: 0.75rem;
-font-size: 3.5vw;
-	}
-}*/
-
-.nowrap {
-white-space: nowrap;
-}
-
-h2{
-/*font-size: 0.75rem;*/
-font-size: 3vw;
-	}
-}
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 /*Define a imagem de fundo responsivimante*/
@@ -105,11 +108,18 @@ font-size: 3vw;
     background-size: cover;
 }
 
+#bg1{
+	/* The image used */
+    background-image: url("../images/fundo3.png");
+}
+
 #bg1 p:nth-of-type(1){
-	padding-top: 1em;
+	font-family: 'Advent Pro';
+	padding-top: 0.5em;
 	text-align: center;
-	font-size: 30pt;
-	text-shadow: 1px 20px 5px #606060;
+	font-size: 36pt;
+	font-weight: 500;
+	text-shadow: 0px 15px 5px #606060;
 }
 
 #bg1 p:nth-of-type(2){
@@ -120,59 +130,80 @@ font-size: 3vw;
 	color: #be3d39;
 }
 
-p span:nth-of-type(1){
+/*p span:nth-of-type(1){
 	font-size: 26pt;
 	color:#ba201b;
 	vertical-align: -10px;
 	text-decoration: overline;
+}*/
+
+#carouselExampleIndicators1{
+	position: absolute;
+	top: 30em;
+	width:100%;
 }
 
-#bg1{
-	/* The image used */
-    background-image: url("../images/fundo3.png");
+#carouselExampleIndicators1 ol{
+	position: relative;
+	top:33.75em;
 }
 
-/*elemento 'a' e id 'carouselExampleIndicators' dentro do id 'bg1'*/
-#bg1 a, #bg1 #carouselExampleIndicators{
-	padding-top: 7em;
-}
-
-.carousel-indicators li {
+#carouselExampleIndicators1 .carousel-indicators li {
     display: inline-block;
     width: 15px;
     height: 15px;
-    text-indent: 0;
+    /*text-indent: 0;*/
     cursor: pointer;
     border: none;
     border-radius: 50%;
     background-color: #c44;
     box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5); 
-    position: relative;
-    top:5em;
+    
     
 }
-.carousel-indicators .active {
+ #carouselExampleIndicators1 .carousel-indicators .active {
     width: 20px;
     height: 20px;
     background-color: #990000;
-    position: relative;
-    top:5em;
 }
 
 
 /*Mudar cor dos controladores https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel*/
-.carousel-control-prev-icon {
+#carouselExampleIndicators1 .carousel-control-prev-icon {
  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23be3d39' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important
  /*opacity: 1!important;*/
 }
 
-.carousel-control-next-icon {
+#carouselExampleIndicators1 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23be3d39' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.glyphicon-question-sign{
+	position: absolute;
+	left:0.5em;
+	top:28em!important;
+	font-size:20pt!important;
+	color:#444444!important;
+}
+
+#detalhes-carro p{
+	position:absolute;
+	top:14.5em;
+	left:6em;
+}
+
+#detalhes-carro span{
+	font-size:20pt;
+	color: white;
+	background-color: #444444;
+	border: 2px solid black;
+	padding: 8px 5em 8px 8px;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------*/
 #bg2 p{
 	/*text-align: right;*/
+	font-family: 'Advent Pro';
 	text-align: justify;
 	font-size: 22pt;
 	color: white;
@@ -192,12 +223,64 @@ p span:nth-of-type(1){
 #botao4{
 	margin-top:5em;
 }
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
 
 #bg3{
 	background-image: url("../images/fundo4.png");
 }
 
+#bg3 p{
+	position: relative;
+	top: 2em;
+	text-align: center;
+	font-size: 35pt;
+	font-weight: 700;
+	color:black;
+	text-shadow: 2px 2px 2px white;
+}
+
+#carouselExampleIndicators2{
+	position: relative;
+	top: 28em;
+}
+
+#carouselExampleIndicators2 ol{
+	position: relative;
+	top:24em;
+}
+
+#carouselExampleIndicators2 .carousel-indicators li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    /*text-indent: 0;*/
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: ;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5); 
+    
+    
+}
+ #carouselExampleIndicators2 .carousel-indicators .active {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+
+/*Mudar cor dos controladores https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel*/
+#carouselExampleIndicators2 .carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important
+ /*opacity: 1!important;*/
+}
+
+#carouselExampleIndicators2 .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
 /*----------------------------------------------------------------------------------------------------------------------------------------*/
+
 #rodape{
 	font-size: medium;
 }
@@ -211,3 +294,4 @@ p span:nth-of-type(1){
 
 
 
+/*vertical-align: alinha em relação ao elemento pai
