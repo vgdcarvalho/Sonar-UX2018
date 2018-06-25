@@ -33,7 +33,7 @@ a:hover {
 
 .jumbotron {
 	margin-bottom:0;
-    background-color: #666!important; /*Uma declaração de estilo com !important ignora qualquer
+  background-color: #666!important; /*Uma declaração de estilo com !important ignora qualquer
       									 hierarquia e prevalece sobre todas as demais, é a de mais alta prioridade.*/
 }
 
@@ -186,18 +186,36 @@ a:hover {
 	color:#444444!important;
 }
 
-#detalhes-carro p{
+#botoes-img1 p{
 	position:absolute;
 	top:14.5em;
 	left:6em;
 }
 
-#detalhes-carro span{
+#botoes-img1 span{
 	font-size:20pt;
 	color: white;
 	background-color: #444444;
 	border: 2px solid black;
-	padding: 8px 5em 8px 8px;
+	padding: 8px 4em 8px 8px;
+}
+
+.fa-clipboard-list{
+	position: relative;
+	left:2em;
+	text-shadow: none;
+}
+
+.fa-ellipsis-v{
+	position: relative;
+	left:2em;
+	text-shadow: none;
+}
+
+.fa-wrench{
+	position: relative;
+	left:4em;
+	text-shadow: none;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -241,12 +259,12 @@ a:hover {
 
 #carouselExampleIndicators2{
 	position: relative;
-	top: 28em;
+	top: 24em;
 }
 
 #carouselExampleIndicators2 ol{
 	position: relative;
-	top:24em;
+	top:22em;
 }
 
 #carouselExampleIndicators2 .carousel-indicators li {
@@ -265,7 +283,7 @@ a:hover {
  #carouselExampleIndicators2 .carousel-indicators .active {
     width: 20px;
     height: 20px;
-    background-color: black;
+    background-color: #666;
 }
 
 
@@ -279,19 +297,39 @@ a:hover {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
+
+#botoes-img3 p{
+	position:relative;
+	top:5.75em;
+	right:1.5em;
+}
+
+#botoes-img3 span{
+	font-family: 'Advent Pro';
+	font-size:16pt;
+	font-weight: normal;
+	text-shadow: none;
+	color: white;
+	background-color: #444444;
+	border: 2px solid black;
+	padding: 6px 3.5em 6px 6px;
+}
+
+.fa-list-ul{
+	position: relative;
+	left:2em;
+	text-shadow: none;
+}
+
+.fa-clock{
+	position: relative;
+	left:2em;
+	text-shadow: none;
+}
+
 /*----------------------------------------------------------------------------------------------------------------------------------------*/
 
 #rodape{
 	font-size: medium;
 }
 
-
-/*#imagem1{
-	height: 100px;
-	width: 200px;
-}*/
-
-
-
-
-/*vertical-align: alinha em relação ao elemento pai
