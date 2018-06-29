@@ -4,55 +4,99 @@
   border: 1px solid #f00;
 }
 */
+
+/*.slide-content .scroller {
+  width: 1024px;
+}*/
+
 body,html{
 	height:100%; /* Necessário para que imagem de fundo funcione responsivamente */
-	font-family: "Roboto Condensed";
+	font-family: 'Roboto Condensed';
 }
 
-.btn-primary{
+img {
+    width: 100%;  
+    height: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link, a:visited{
+	color: #ffffff
+}
+
+a:hover {
+	color:#000000
+}
+
+.jumbotron {
+	margin-bottom:0;
+  background-color: #666!important; /*Uma declaração de estilo com !important ignora qualquer
+      									 hierarquia e prevalece sobre todas as demais, é a de mais alta prioridade.*/
+}
+
+/*Não está responsiva*/
+/*#imagem1{
+	height: 75%;
+	width: 75%;
+}
+*/
+
+/*Necessário para que botões fiquem juntos*/
+#botoes{
+	font-size: 0pt;
+}
+
+#botoes .btn-primary{
 	background-color: #929292!important;
 	border-color: #be3d39!important;
 	padding:20px!important;
 	font-size: x-large!important;
+	height: 100%;
 }
 
-.glyphicon-log-in{
+#botoes .btn-primary:hover{
+	color:black;
+}
+
+#logos .btn-default{
+	background-color: transparent;
+	font-size:large;
+	color: white;
+	text-align: center;
+}
+
+#logos .btn-default:nth-of-type(1){
+	margin-left: 30%;
+}
+
+#logos .glyphicon{
 	font-size: 20pt!important;
 	color:white!important;
-	margin-top:2em!important;
-	padding-left: 6px!important;
 }
+
+/*.glyphicon-user{
+	margin-left:3.75em!important;
+}*/
+
+/*#logos p{
+	display: inline;
+	color: white;
+}
+
+#logos p:nth-of-type(2){ segundo elemento p dentro do id logos
+	margin-left: 2em!important;
+}*/
+
 /*.btn-default{
 	padding:20px!important;
 	font-size: large!important;
 }*/
 
-/*fonte diminuir automaticamente e melhorar responsividade
-max-width determina o tamanho máxima que vale para a classe .nowrap funcionar
-vw é uma unidade relativa ao viewport*/
-@media (max-width: 48em) {
-.nowrap{
-/*font-size: 0.75rem;*/
-font-size: 6vw;
-	}
 
-/*@media (max-width: 48em) {
-p {
-font-size: 0.75rem;
-font-size: 3.5vw;
-	}
-}*/
-
-.nowrap {
-white-space: nowrap;
-}
-
-h2{
-/*font-size: 0.75rem;*/
-font-size: 3vw;
-	}
-}
-
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
 /*Define a imagem de fundo responsivimante*/
 .bg {
     /* Full height */
@@ -66,49 +110,118 @@ font-size: 3vw;
 
 #bg1{
 	/* The image used */
-    background-image: url("imagens/fundo3.png");
+    background-image: url("../images/fundo3.png");
 }
 
-/*elemento 'a' e id 'carouselExampleIndicators' dentro do id 'bg1'*/
-#bg1 a, #bg1 #carouselExampleIndicators{
-	padding-top: 25em;
+#bg1 p:nth-of-type(1){
+	font-family: 'Advent Pro';
+	padding-top: 0.5em;
+	text-align: center;
+	font-size: 36pt;
+	font-weight: 500;
+	text-shadow: 0px 15px 5px #606060;
 }
 
-.carousel-indicators li {
+#bg1 p:nth-of-type(2){
+	margin-top: 2em;
+	text-align: center;
+	font-size: 20pt;
+	word-spacing: 20px;
+	color: #be3d39;
+}
+
+/*p span:nth-of-type(1){
+	font-size: 26pt;
+	color:#ba201b;
+	vertical-align: -10px;
+	text-decoration: overline;
+}*/
+
+#carouselExampleIndicators1{
+	position: absolute;
+	top: 30em;
+	width:100%;
+}
+
+#carouselExampleIndicators1 ol{
+	position: relative;
+	top:33.75em;
+}
+
+#carouselExampleIndicators1 .carousel-indicators li {
     display: inline-block;
     width: 15px;
     height: 15px;
-    text-indent: 0;
+    /*text-indent: 0;*/
     cursor: pointer;
     border: none;
     border-radius: 50%;
     background-color: #c44;
     box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5); 
-    position: relative;
-    top:5em;
+    
     
 }
-.carousel-indicators .active {
+ #carouselExampleIndicators1 .carousel-indicators .active {
     width: 20px;
     height: 20px;
     background-color: #990000;
-    position: relative;
-    top:5em;
 }
 
 
 /*Mudar cor dos controladores https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel*/
-.carousel-control-prev-icon {
+#carouselExampleIndicators1 .carousel-control-prev-icon {
  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23be3d39' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important
  /*opacity: 1!important;*/
 }
 
-.carousel-control-next-icon {
+#carouselExampleIndicators1 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23be3d39' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
+.glyphicon-question-sign{
+	position: absolute;
+	left:0.5em;
+	top:28em!important;
+	font-size:20pt!important;
+	color:#444444!important;
+}
+
+#botoes-img1 p{
+	position:absolute;
+	top:14.5em;
+	left:6em;
+}
+
+#botoes-img1 span{
+	font-size:20pt;
+	color: white;
+	background-color: #444444;
+	border: 2px solid black;
+	padding: 8px 4em 8px 8px;
+}
+
+.fa-clipboard-list{
+	position: relative;
+	left:2em;
+	text-shadow: none;
+}
+
+.fa-ellipsis-v{
+	position: relative;
+	left:2em;
+	text-shadow: none;
+}
+
+.fa-wrench{
+	position: relative;
+	left:4em;
+	text-shadow: none;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
 #bg2 p{
 	/*text-align: right;*/
+	font-family: 'Advent Pro';
 	text-align: justify;
 	font-size: 22pt;
 	color: white;
@@ -117,7 +230,7 @@ font-size: 3vw;
 }
 
 #bg2{
-	background-image: url("imagens/fundo2-5.jpg");
+	background-image: url("../images/fundo2-5.jpg");
 	/*opacity: 0.4;*/
 }
 
@@ -128,33 +241,95 @@ font-size: 3vw;
 #botao4{
 	margin-top:5em;
 }
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
 
 #bg3{
-	background-image: url("imagens/fundo4.png");
+	background-image: url("../images/fundo4.png");
 }
 
-img {
-    width: 100%;  
-    height: 100%;
+#bg3 p{
+	position: relative;
+	top: 2em;
+	text-align: center;
+	font-size: 35pt;
+	font-weight: 700;
+	color:black;
+	text-shadow: 2px 2px 2px white;
 }
 
-.jumbotron {
-      margin-bottom:0;
-      background-color: #666!important; /*Uma declaração de estilo com !important ignora qualquer
-      									 hierarquia e prevalece sobre todas as demais, é a de mais alta prioridade.*/
+#carouselExampleIndicators2{
+	position: relative;
+	top: 24em;
 }
 
-/*#imagem1{
-	height: 100px;
-	width: 200px;
-}*/
-
-
-
-/*.slide-content .scroller {
-  width: 1024px;
+#carouselExampleIndicators2 ol{
+	position: relative;
+	top:22em;
 }
 
-/*O que preciso fazer: 
-Imagem de fundo precisa diminuir também quando redimensiono a janela
-Ajustar ponteiro para cada local da tela*/
+#carouselExampleIndicators2 .carousel-indicators li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    /*text-indent: 0;*/
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: ;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5); 
+    
+    
+}
+ #carouselExampleIndicators2 .carousel-indicators .active {
+    width: 20px;
+    height: 20px;
+    background-color: #666;
+}
+
+
+/*Mudar cor dos controladores https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel*/
+#carouselExampleIndicators2 .carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important
+ /*opacity: 1!important;*/
+}
+
+#carouselExampleIndicators2 .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+
+#botoes-img3 p{
+	position:relative;
+	top:5.75em;
+	right:1.5em;
+}
+
+#botoes-img3 span{
+	font-family: 'Advent Pro';
+	font-size:16pt;
+	font-weight: normal;
+	text-shadow: none;
+	color: white;
+	background-color: #444444;
+	border: 2px solid black;
+	padding: 6px 3.5em 6px 6px;
+}
+
+.fa-list-ul{
+	position: relative;
+	left:2em;
+	text-shadow: none;
+}
+
+.fa-clock{
+	position: relative;
+	left:2em;
+	text-shadow: none;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+#rodape{
+	font-size: medium;
+}
+
