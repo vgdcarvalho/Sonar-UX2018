@@ -1,0 +1,63 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+#sonar-logo {
+	position: absolute;
+    right: 1215px;
+    max-width: 20%;
+    height: auto;
+    background-color: #666666;
+    padding-bottom: 20px;
+}
+
+#top-menu {
+	font-family: 'Roboto', courier, serif;
+	font-size: 30px;
+}
+
+#top-menu a {
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 0 50px;
+    text-decoration: none;
+}
+
+#top-menu  a:hover {
+	color: white;
+    opacity: .5;
+    text-decoration: none;
+}
+
+#top-menu  li {
+    float: right;
+}
+
+#rodape a {
+    display: block;
+    color: #666666;
+    text-align: center;
+    padding: 14px 80px;
+    text-decoration: none;
+}
+
+#rodape  a:hover {
+	color: #666666;
+    opacity: .5;
+    text-decoration: none;
+}
+
+#content p {
+	margin: 50px 0;
+	font-size: 15px;
+}
+
+.navbar {
+	background-color: #666666;
+	border: 0;
+}
