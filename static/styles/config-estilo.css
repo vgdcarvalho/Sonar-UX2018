@@ -57,7 +57,57 @@ ul {
 	font-size: 15px;
 }
 
+#avatar img {
+    max-width: 80%;
+    height: auto;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+#avatar p {
+    margin-left: 100px;
+    text-align: center;
+}
+
+#avatar #nome {
+    font-family: 'Roboto', courier, serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 10px 100px;
+}
+
+#avatar #email {
+    font-family: 'Roboto', courier, serif;
+    font-size: 20px;
+    margin: 0px 0 50px 100px;
+}
+
+#opcoes {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .navbar {
 	background-color: #666666;
 	border: 0;
+}
+
+.panel-title a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', courier, serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.panel-title  a:hover {
+    color: white;
+    opacity: .5;
+    text-decoration: none;
+}
+
+.panel-heading {
+    background-color: #666666 !important;
 }
