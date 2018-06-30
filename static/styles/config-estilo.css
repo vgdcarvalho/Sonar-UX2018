@@ -1,0 +1,168 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+#sonar-logo {
+	position: absolute;
+    right: 1215px;
+    max-width: 20%;
+    height: auto;
+    background-color: #666666;
+    padding-bottom: 20px;
+}
+
+#top-menu {
+	font-family: 'Roboto', courier, serif;
+	font-size: 30px;
+}
+
+#top-menu a {
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 0 50px;
+    text-decoration: none;
+}
+
+#top-menu  a:hover {
+	color: white;
+    opacity: .5;
+    text-decoration: none;
+}
+
+#top-menu  li {
+    float: right;
+}
+
+#rodape a {
+    display: block;
+    color: #666666;
+    text-align: center;
+    padding: 14px 80px;
+    text-decoration: none;
+}
+
+#rodape  a:hover {
+	color: #666666;
+    opacity: .5;
+    text-decoration: none;
+}
+
+#content p {
+	margin: 50px 0;
+	font-size: 15px;
+}
+
+#avatar img {
+    max-width: 80%;
+    height: auto;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+#avatar p {
+    margin-left: 100px;
+    text-align: center;
+}
+
+#avatar #nome {
+    font-family: 'Roboto', courier, serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 10px 100px;
+}
+
+#avatar #email {
+    font-family: 'Roboto', courier, serif;
+    font-size: 20px;
+    margin: 0px 0 50px 100px;
+}
+
+#opcoes {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#login-op a, #pessoal-op a, #pref-op a {
+    font-family: 'Roboto', courier, serif;
+    font-size: 24px;
+    color: #666666;
+    text-transform: capitalize;
+    margin-left: 40px;
+}
+
+#login-op a:hover, #pessoal-op a:hover, #pref-op a:hover {
+    color: #666666;
+    opacity: .5;
+    text-decoration: none;
+}
+
+#avatar:hover .overlay {
+  opacity: 1;
+  color: #666666;
+}
+
+.navbar {
+	background-color: #666666;
+	border: 0;
+}
+
+.panel-title a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', courier, serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.panel-title  a:hover {
+    color: white;
+    opacity: .5;
+    text-decoration: none;
+}
+
+.panel-heading {
+    background-color: #666666 !important;
+}
+
+.panel-heading i {
+    color: white;
+    margin-top: -25px;
+}
+
+.panel-heading i:hover {
+    color: white;
+    opacity: .5;
+}
+
+.overlay {
+  position: absolute;
+  top: -240px;
+  bottom: 0;
+  left: 240px;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.icon {
+  color: #666666;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-user:hover {
+  color: #eee;
