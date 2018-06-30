@@ -54,23 +54,15 @@
 	      </div>
 	    </div>
 
-		<!-- <div class="jumbotron container-fluid">
-			<div class="row">
-				<div class="col-md-3">
-					<img src="../static/images/logo2-2.png" class="img-responsive" alt="Logo marca da empresa">
-				</div>
-				<div class="col-md-6">
-					Test1
-				</div>
-				<div id="logos" class="col-md-3">
-					Test 2
-         		</div>
-			</div>
-		</div> -->
-
+	    <!-- Conteúdo da página -->
 		<div id="content" class="container">
 			<div id="avatar" class="col-lg-6">
-				<img src="../static/images/Male-Avatar.png">
+				<img src="../static/images/Male-Avatar.png" class="image" alt="Avatar">
+				<div class="overlay">
+					<a href="#" class="icon" title="Change image">
+      					<i class="fa fa-edit"></i>
+      				</a>
+				</div>
 				<p id="nome">
 					Senhor X
 				</p>
@@ -83,51 +75,60 @@
 				  <div class="panel panel-default">
 				    <div class="panel-heading">
 				      <h4 class="panel-title">
-				        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#login">
 				        Login e Segurança</a>
 				      </h4>
+				      <i class="fas fa-edit pull-right fa-2x"></i>
 				    </div>
-				    <div id="collapse1" class="panel-collapse collapse in">
-				      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-				      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-				      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-				      commodo consequat.</div>
+				    <div id="login" class="panel-collapse collapse in">
+				      <div class="panel-body">
+				      	<ul id="login-op">
+						  <li><a href="#">Usuário</a></li>
+						  <li><a href="#">Senha</a></li>
+						  <li><a href="#">Histórico</a></li>
+						</ul>
+				      </div>
 				    </div>
 				  </div>
 				  <div class="panel panel-default">
 				    <div class="panel-heading">
 				      <h4 class="panel-title">
-				        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#pessoal">
 				        Informações Pessoais</a>
 				      </h4>
+				      <i class="fas fa-edit pull-right fa-2x"></i>
 				    </div>
-				    <div id="collapse2" class="panel-collapse collapse">
-				      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-				      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-				      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-				      commodo consequat.</div>
+				    <div id="pessoal" class="panel-collapse collapse">
+				      <div class="panel-body">
+				      	<ul id="pessoal-op">
+						  <li><a href="#">nome</a></li>
+						  <li><a href="#">endereço</a></li>
+						  <li><a href="#">telefone</a></li>
+						  <li><a href="#">email</a></li>
+						</ul>
+				      </div>
 				    </div>
 				  </div>
 				  <div class="panel panel-default">
 				    <div class="panel-heading">
 				      <h4 class="panel-title">
-				        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#pref">
 				        Preferências da Conta</a>
 				      </h4>
+				      <i class="fas fa-edit pull-right fa-2x"></i>
 				    </div>
-				    <div id="collapse3" class="panel-collapse collapse">
-				      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-				      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-				      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-				      commodo consequat.</div>
+				    <div id="pref" class="panel-collapse collapse">
+				      <div class="panel-body">
+				      	<ul id="pref-op">
+						  <li><a href="#">cores</a></li>
+						  <li><a href="#">tamanho da fonte</a></li>
+						</ul>
+				      </div>
 				    </div>
 				  </div>
 				</div>
 			</div>
 		</div>
-
-
-		
 
 		<!-- Rodapé -->
 		<div id="rodape" class="container-fluid">
