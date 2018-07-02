@@ -14,14 +14,14 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
 		<!-- Meu CSS -->
-		<link href="../static/styles/config-estilo.css" rel="stylesheet" type="text/css" /> 
+		<link href="../static/styles/sobre-estilo.css" rel="stylesheet" type="text/css" /> 
 
 		<!-- Fonts -->
 	    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	    
-	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> 
 
-		<title> Sonar - Configurações </title>
+		<title> Sonar - Sobre</title>
 	</head>
 	<body>
 
@@ -37,8 +37,7 @@
 	          </button>
 	          <a class="navbar-brand" href="Home.html"><img src="../static/images/logo2-2.png" class="img-responsive" alt="Logo marca da empresa" id="sonar-logo"></a>
 	        </div>
-	        <div class="collapse navbar-collapse">
-	          <ul id="top-menu" class="list-inline list-unstyled">
+	        <div class="collapse navbar-collapse"><ul id="top-menu" class="list-inline list-unstyled">
 	          	<li><a href="sobre.html">Sobre</a></li>
 	          	<li><a href="configuracoes.html">Configurações</a></li>
 	          	<li><a href="#">Customizar</a></li>
@@ -48,84 +47,55 @@
 	      </div>
 	    </div>
 
-	    <!-- Conteúdo da página -->
-	    <!-- Avatar -->
+		<!-- Preencher "content" com o conteúdo específico da página -->
+
 		<div id="content" class="container">
-			<div id="avatar" class="col-lg-6">
-				<img src="../static/images/Male-Avatar.png" class="image" alt="Avatar">
-				<div class="overlay">
-					<a href="#" class="icon" title="Change image">
-      					<i class="fa fa-edit"></i>
-      				</a>
-				</div>
-				<!-- Nome e email -->
-				<p id="nome">
-					Senhor X
-				</p>
-				<p id="email">
-					senhorx@example.com
-				</p>
+			<h2>
+				Sobre o Website
+			</h2>
+			<h4>
+				Este website foi desenvolvido como projeto da disciplina <strong>Tópicos em Informárica 7: UX na Web</strong>, dos cursos de Ciência da Computação e Engenharia de Computação da UFSCar, pelos alunos:
+			</h4>
+			<ul class="list list-unstyled">
+				<li>
+					Daniel Lippi
+					<a href="" target="_blank"><i class="fab fa-github-square"></i></a>
+					<a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+				</li>
+				<li>
+					Eduardo Oliveira
+					<a href="" target="_blank"><i class="fab fa-github-square"></i></a>
+					<a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+				</li>
+				<li>
+					Guilherme Lemos
+					<a href="" target="_blank"><i class="fab fa-github-square"></i></a>
+					<a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+				</li>
+				<li>
+					Sérgio Hideki
+					<a href="" target="_blank"><i class="fab fa-github-square"></i></a>
+					<a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+				</li>
+				<li>
+					Vinícius Carvalho
+					<a href="https://github.com/vgdcarvalho" target="_blank"><i class="fab fa-github-square"></i></a>
+					<a href="https://www.linkedin.com/in/vin%C3%ADcius-carvalho/" target="_blank"><i class="fab fa-linkedin"></i></a>
+				</li>
+			</ul>
+			<div id="projeto">
+				<h2>
+					Projeto
+				</h2>
+				<a id="projeto" href="https://github.com/vgdcarvalho/Sonar-UX2018" target="_blank">
+					<i class="fab fa-github-square fa-2x"></i>
+					/vgdcarvalho/Sonar-UX2018
+				</a>
 			</div>
-			<!-- Menu de opções -->
-			<div id="opcoes" class="col-lg-6">
-				<div class="panel-group" id="accordion">
-				  <div class="panel panel-default">
-				    <div class="panel-heading">
-				      <h4 class="panel-title">
-				        <a data-toggle="collapse" data-parent="#accordion" href="#login">
-				        Login e Segurança</a>
-				      </h4>
-				      <i class="fas fa-edit pull-right fa-2x"></i>
-				    </div>
-				    <div id="login" class="panel-collapse collapse in">
-				      <div class="panel-body">
-				      	<ul id="login-op">
-						  <li><a href="#">Usuário</a></li>
-						  <li><a href="#">Senha</a></li>
-						  <li><a href="#">Histórico</a></li>
-						</ul>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="panel panel-default">
-				    <div class="panel-heading">
-				      <h4 class="panel-title">
-				        <a data-toggle="collapse" data-parent="#accordion" href="#pessoal">
-				        Informações Pessoais</a>
-				      </h4>
-				      <i class="fas fa-edit pull-right fa-2x"></i>
-				    </div>
-				    <div id="pessoal" class="panel-collapse collapse">
-				      <div class="panel-body">
-				      	<ul id="pessoal-op">
-						  <li><a href="#">nome</a></li>
-						  <li><a href="#">endereço</a></li>
-						  <li><a href="#">telefone</a></li>
-						  <li><a href="#">email</a></li>
-						</ul>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="panel panel-default">
-				    <div class="panel-heading">
-				      <h4 class="panel-title">
-				        <a data-toggle="collapse" data-parent="#accordion" href="#pref">
-				        Preferências da Conta</a>
-				      </h4>
-				      <i class="fas fa-edit pull-right fa-2x"></i>
-				    </div>
-				    <div id="pref" class="panel-collapse collapse">
-				      <div class="panel-body">
-				      	<ul id="pref-op">
-						  <li><a href="#">cores</a></li>
-						  <li><a href="#">tamanho da fonte</a></li>
-						</ul>
-				      </div>
-				    </div>
-				  </div>
-				</div>
-			</div>
-		</div>
+ 		</div>
+
+
+		
 
 		<!-- Rodapé -->
 		<div id="rodape" class="container-fluid">
