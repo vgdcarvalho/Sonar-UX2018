@@ -14,85 +14,85 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
 		<!-- Meu CSS -->
-		<link href="#" rel="stylesheet" type="text/css" /> 
+		<link href="../static/styles/contato-estilo.css" rel="stylesheet" type="text/css" /> 
 
-		<title> Sonar - Home1 </title>
+		<!-- Fonts -->
+	    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	    
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> 
+
+		<title> Sonar - Contato </title>
 	</head>
 	<body>
 
 		<!-- Menu Superior -->
-			<div class="jumbotron container-fluid">
-			<div class="row">
-				<div class="col-sm-2 col-md-2 hidden-xs">
-					<img id="imagem1" src="../static/images/logo2-2.png" class="img-responsive" alt="Logo marca da empresa">
-				</div>
-				<div id="botoes" class="col-sm-offset-2 col-sm-5 col-md-offset-2 col-md-5 col-xs-6">
-					<a class="btn btn-primary btn-lg"  href="visualizador.html" role="button">Crie seu carro</a>
-					<a class="btn btn-primary btn-lg"  href="contato.html" role="button">Contato</a>
-					<a class="btn btn-primary btn-lg"  href="suporte.html" role="button">Suporte</a>
-				</div>
-				<div id="logos" class="col-sm-3 col-md-3 col-lg-3">
-					<!-- <button type="button" class="btn btn-default btn-sm">
-         			<span class="glyphicon glyphicon-log-in"></span> Log in </button> -->
-         			<!-- <a href="login.html" ><span class="glyphicon glyphicon-log-in"></span></a>
-         			<a href="registro.html"><span class="glyphicon glyphicon-user"></span></a>
-         			<a href="login.html"><p><br/>Log in</p></a>
-         			<a href="registro.html"><p>Registre-se</p></a> -->
-         			<button type="button" class="btn btn-default btn-sm">
-          				<span class="glyphicon glyphicon-log-in"></span><br/>Log in
-        			</button>
-        			<button type="button" class="btn btn-default btn-sm">
-          				<span class="glyphicon glyphicon-user"></span><br/> Registre-se
-        			</button>
-         		</div>
-			</div>
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="Home.html"><img src="../static/images/logo2-2.png" class="img-responsive" alt="Logo marca da empresa" id="sonar-logo"></a>
+	        </div>
+	        <div class="collapse navbar-collapse"><ul id="top-menu" class="list-inline list-unstyled">
+	          	<li><a href="#">Sobre</a></li>
+	          	<li><a href="configuracoes.html">Configurações</a></li>
+	          	<li><a href="#">Customizar</a></li>
+				<li><a href="Home.html">Home</a></li>
+			</ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
+
+	    <h1 id="page-title">  
+	    	Contato
+	    </h1>
+	    <!--Formulário de contato -->
+	    <div class="container" id="form">
+	    	<div class="row">
+	      		<div class="col-lg-6">
+	      			<h4>
+	      				Nome
+	      			</h4>
+	      			<input type="text" size="100" name="nome" placeholder="Seu nome">
+	      		</div>
+	      		<div class="col-lg-6">
+	      			<h4>
+	      				Email
+	      			</h4>
+	      			<input type="text" size="100" name="email" placeholder="Seu email">
+	      		</div>
+	      	</div>
+	      	<div class="row">
+	      		<div class="col-lg-6">
+	      			<h4>
+	      				Enedereço
+	      			</h4>
+	      			<input type="text" size="100" name="endereço" placeholder="Seu endereço">
+	      		</div>
+	      		<div class="col-lg-6">
+	      			<h4>
+	      				Telefone
+	      			</h4>
+	      			<input type="text" size="100" name="telefone" placeholder="Seu telefone">
+	      		</div>
+	      	</div>
+	      	<div class="row">
+	      		<div class="col-lg-12">
+	      			<h4>
+	      				Assunto
+	      			</h4>
+	      			<textarea Name="content" ROWS="10" COLS="220">Insira o assunto aqui...</textarea> 
+	      		</div>
+	      	</div>
+	    	 <button type="button" class="btn btn-success">Enviar</button> 
 		</div>
-	 
-                                                        <center> <h1>  <b> </m>Contato </b></h1> </center>
-                                                <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
-	<input type="hidden" name="email" value="email@doseudominio">   <!-- Deve ser uma conta de email ativa em seu domínio -->
-	
-	<p> 
-	Nome:<br /> 
-	<input type="text" size="30" name="nome"> 
-	
-                                            
-	email:</> 
-                                            <input type="text" size="30" name="email"> 
-                                                                                        </p>
-  
-                                                
-	telefone:<br /> 
-	<input type="text" size="30" name="Telefone"> 
-	  
-	
-	Assunto: 
-	<input type="text" size="50" name="Assunto"> 
-	</p>   
-	
-	<p> 
-	<input type="submit" name="BTEnvia" value="Enviar"> 
-	
-                                                     
-                                                     	<p>
-	
-	</form>
-	
-</html>
- 
- <h2> Atendimento Online</h2>
-<br>
-       <u> Nosso horário de atendimento é de segunda a sexta-feira das 08:00 as 20 horas, e aos sábados das 08:00 as 14 horas.(exceto nos feriados).</u>
-<p> 
-	<input type="submit" name="BTEntrar" value="Entrar"> 
-	
-                                                     
-                                                     	<p>
-	
-                                                      </head>
 
-		
-
+		<!-- Chat -->
+                                                    
 		<!-- Rodapé -->
 		<div id="rodape" class="container-fluid">
 			<footer class="row jumbotron">
