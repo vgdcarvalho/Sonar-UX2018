@@ -1,0 +1,104 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+#sonar-logo {
+	position: absolute;
+    right: 1215px;
+    max-width: 20%;
+    height: auto;
+    background-color: #666666;
+    padding-bottom: 20px;
+}
+
+#top-menu {
+	font-family: 'Roboto', courier, serif;
+	font-size: 30px;
+}
+
+#top-menu a {
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 0 50px;
+    text-decoration: none;
+}
+
+#top-menu  a:hover {
+	color: white;
+    opacity: .5;
+    text-decoration: none;
+}
+
+#top-menu  li {
+    float: right;
+}
+
+#rodape a {
+    display: block;
+    color: #666666;
+    text-align: center;
+    padding: 14px 80px;
+    text-decoration: none;
+}
+
+#rodape  a:hover {
+	color: #666666;
+    opacity: .5;
+    text-decoration: none;
+}
+
+#content p {
+    margin: 50px 0;
+	font-size: 15px;
+}
+
+.navbar {
+	background-color: #666666;
+	border: 0;
+}
+
+#content h2, #projeto h2 {
+    text-align: center;
+    font-family: 'Roboto', courier, serif;
+    font-size: 45px;
+    font-weight: 20px;
+    margin: 25px 0;
+}
+
+#content h4, #projeto h4 {
+    text-align: justify;
+    font-family: 'Roboto', courier, serif;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+#content ul {
+    margin-top: 25px;
+    text-align: center;
+    font-family: 'Roboto', courier, serif;
+    font-size: 20px;
+}
+
+#content i {
+    text-decoration: none;
+    color: #666666;
+}
+
+#content i:hover, #projeto a:hover {
+    color: #666666;
+    opacity: .5;
+}
+
+#projeto a {
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', courier, serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: #666666;
+}

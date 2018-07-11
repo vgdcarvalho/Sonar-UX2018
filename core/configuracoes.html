@@ -14,14 +14,14 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
 		<!-- Meu CSS -->
-		<link href="../static/styles/contato-estilo.css" rel="stylesheet" type="text/css" /> 
+		<link href="../static/styles/config-estilo.css" rel="stylesheet" type="text/css" /> 
 
 		<!-- Fonts -->
 	    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	    
-	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> 
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-		<title> Sonar - Contato </title>
+		<title> Sonar - Configurações </title>
 	</head>
 	<body>
 
@@ -37,7 +37,8 @@
 	          </button>
 	          <a class="navbar-brand" href="index.html"><img src="../static/images/logo2-2.png" class="img-responsive" alt="Logo marca da empresa" id="sonar-logo"></a>
 	        </div>
-	        <div class="collapse navbar-collapse"><ul id="top-menu" class="list-inline list-unstyled">
+	        <div class="collapse navbar-collapse">
+	          <ul id="top-menu" class="list-inline list-unstyled">
 	          	<li><a href="sobre.html">Sobre</a></li>
 	          	<li><a href="configuracoes.html">Configurações</a></li>
 	          	<li><a href="#">Customizar</a></li>
@@ -47,52 +48,85 @@
 	      </div>
 	    </div>
 
-	    <h1 id="page-title">  
-	    	Contato
-	    </h1>
-	    <!--Formulário de contato -->
-	    <div class="container" id="form">
-	    	<div class="row">
-	      		<div class="col-lg-6">
-	      			<h4>
-	      				Nome
-	      			</h4>
-	      			<input type="text" size="100" name="nome" placeholder="Seu nome">
-	      		</div>
-	      		<div class="col-lg-6">
-	      			<h4>
-	      				Email
-	      			</h4>
-	      			<input type="text" size="100" name="email" placeholder="Seu email">
-	      		</div>
-	      	</div>
-	      	<div class="row">
-	      		<div class="col-lg-6">
-	      			<h4>
-	      				Enedereço
-	      			</h4>
-	      			<input type="text" size="100" name="endereço" placeholder="Seu endereço">
-	      		</div>
-	      		<div class="col-lg-6">
-	      			<h4>
-	      				Telefone
-	      			</h4>
-	      			<input type="text" size="100" name="telefone" placeholder="Seu telefone">
-	      		</div>
-	      	</div>
-	      	<div class="row">
-	      		<div class="col-lg-12">
-	      			<h4>
-	      				Assunto
-	      			</h4>
-	      			<textarea Name="content" ROWS="10" COLS="220">Insira o assunto aqui...</textarea> 
-	      		</div>
-	      	</div>
-	    	 <button type="button" class="btn btn-success">Enviar</button> 
+	    <!-- Conteúdo da página -->
+	    <!-- Avatar -->
+		<div id="content" class="container">
+			<div id="avatar" class="col-lg-6">
+				<img src="../static/images/Male-Avatar.png" class="image" alt="Avatar">
+				<div class="overlay">
+					<a href="#" class="icon" title="Change image">
+      					<i class="fa fa-edit"></i>
+      				</a>
+				</div>
+				<!-- Nome e email -->
+				<p id="nome">
+					Senhor X
+				</p>
+				<p id="email">
+					senhorx@example.com
+				</p>
+			</div>
+			<!-- Menu de opções -->
+			<div id="opcoes" class="col-lg-6">
+				<div class="panel-group" id="accordion">
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#login">
+				        Login e Segurança</a>
+				      </h4>
+				      <i class="fas fa-edit pull-right fa-2x"></i>
+				    </div>
+				    <div id="login" class="panel-collapse collapse in">
+				      <div class="panel-body">
+				      	<ul id="login-op">
+						  <li><a href="#">Usuário</a></li>
+						  <li><a href="#">Senha</a></li>
+						  <li><a href="#">Histórico</a></li>
+						</ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#pessoal">
+				        Informações Pessoais</a>
+				      </h4>
+				      <i class="fas fa-edit pull-right fa-2x"></i>
+				    </div>
+				    <div id="pessoal" class="panel-collapse collapse">
+				      <div class="panel-body">
+				      	<ul id="pessoal-op">
+						  <li><a href="#">nome</a></li>
+						  <li><a href="#">endereço</a></li>
+						  <li><a href="#">telefone</a></li>
+						  <li><a href="#">email</a></li>
+						</ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#pref">
+				        Preferências da Conta</a>
+				      </h4>
+				      <i class="fas fa-edit pull-right fa-2x"></i>
+				    </div>
+				    <div id="pref" class="panel-collapse collapse">
+				      <div class="panel-body">
+				      	<ul id="pref-op">
+						  <li><a href="#">cores</a></li>
+						  <li><a href="#">tamanho da fonte</a></li>
+						</ul>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
 		</div>
 
-		<!-- Chat -->
-                                                    
 		<!-- Rodapé -->
 		<div id="rodape" class="container-fluid">
 			<footer class="row jumbotron">
@@ -119,7 +153,6 @@
 				</div>
 			</footer>
 		</div>
-                                     
 
 
 
